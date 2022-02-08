@@ -4,9 +4,20 @@
  padding:0;
  box-sizing: border-box;
 }
+html{
+ max-height:100vh;
+ overflow:hidden;
+}
 body{
  background: #F8F5FC 0% 0% no-repeat padding-box;
  font-family: 'Open Sans', sans-serif;
+ min-height:100%;
+}
+html, body{
+  width:100%;
+  height:100%;
+  overflow-x:hidden;
+  overflow-y:hidden;
 }
 
 /* the top section containing business name */
@@ -54,13 +65,13 @@ i{
  margin:6rem 0;
 }
 .mid-container h2{
- font-size:45px;
+ font-size:35px;
  padding:.5rem;
  color:#212429;
 }
 .mid-container p{
  font-size:18px;
- padding:.5rem;
+ /* padding:.5rem; */
  color:#343A40;
 }
 .mid-container i{
@@ -68,9 +79,10 @@ i{
  padding-bottom:1rem;
 }
 .search{
- margin:8px;
- width:15rem;
- padding:.4rem;
+ margin-top:2rem;
+ margin-left:-3rem;
+ width:20rem;
+ padding:.6rem;
  border:1px solid #DDE2E5;
  background:white;
  border:none;
@@ -81,10 +93,13 @@ i{
 .btn{
  width:4rem;
  padding:.4rem;
+ padding:.5rem;
  background:#6F3FB1;
  border:0;
  color:#fff;
  cursor:pointer;
+ margin-left:1rem;
+ border-radius:.1rem;
 }
 footer{
  display:flex;
@@ -102,7 +117,107 @@ footer p{
  color:#FFFFFF;
 }
 
+@media only screen and (max-width:480px) {
+ .top-container{
+  font-size:12px;
+  padding:.5rem 1.5rem;
+  margin:0;
+ }
+ .top-container h2{
+ font-size:18px;
+}
+ .top-container .logo{
+ font-size:7px;
+}
+.logo{
+ padding:.8rem !important;
+}
+.viewshop{
+ display:flex;
+ border-radius:5rem;
+ padding:0 .5rem;
+}
+.bus-name{
+ padding-right:1.5rem !important;
+}
+.viewshop p {
+ display:none;
+ padding:.5rem;
+}
+i{
+ padding:.3rem;
+}
+.mid-container h2{
+ padding:1rem;
+ font-size:20px !important;
+}
+.mid-container p{
+ font-size: 12px !important;
+ padding:0 2rem !important;
+}
+form{
+ display:flex;
+ flex-direction: column;
+}
+.search{
+ width:100%;
+ margin-left:.1rem;
+ margin-top:.5rem;
+}
+span{
+ padding: 0 8rem; 
+}
+.btn{
+ margin-left:.5rem;
+ width:92%;
+ margin-top:.5rem;
+ font-size:10px;
+ margin-top:1rem;
+}
+::placeholder{
+ font-size:10px;
+}
+footer{
+ font-size:10px;
+}
+.mid-container{
+ margin-left: 1.5rem;
+ margin-right:1.5rem;
+}
+}
+@media only screen and (width:360px){
+ .mid-container{
+  margin-left:.5rem;
+  margin-right:.5rem;
+ }
+}
+/* media query for mobile */
+@media only screen and (max-width:768px) {
+.top-container{
+ padding:1rem 1.5rem;
+ font-size:16px;
+}
+.bus-name{
+ font-size:20px;
+ padding-left:1rem;
+}
+.top-container .logo{
+ font-size:11px;
+ padding:1rem;
+}
+.mid-container h2{
+ font-size:30px;
+}
+.mid-container p{
+ font-size:16px;
+}
+.btn{
+width:12rem;
+margin-left:.2rem;
+padding:.6rem;
+}
+.search{
+padding:.6rem;
+}
 
- 
-
-
+}
